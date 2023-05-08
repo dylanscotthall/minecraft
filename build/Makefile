@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle
+CMAKE_SOURCE_DIR = C:\Users\dylan\Desktop\Projects\Cpp\minecraft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build
+CMAKE_BINARY_DIR = C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,19 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
+#=============================================================================
 # Target rules for targets named update_mappings
 
 # Build rule for target.
@@ -151,7 +164,7 @@ update_mappings: cmake_check_build_system
 
 # fast build rule for target.
 update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f libs\glfw\src\CMakeFiles\update_mappings.dir\build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
+	$(MAKE) $(MAKESILENT) -f glfw-binaries\src\CMakeFiles\update_mappings.dir\build.make glfw-binaries/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
 #=============================================================================
@@ -164,7 +177,7 @@ glfw: cmake_check_build_system
 
 # fast build rule for target.
 glfw/fast:
-	$(MAKE) $(MAKESILENT) -f libs\glfw\src\CMakeFiles\glfw.dir\build.make libs/glfw/src/CMakeFiles/glfw.dir/build
+	$(MAKE) $(MAKESILENT) -f glfw-binaries\src\CMakeFiles\glfw.dir\build.make glfw-binaries/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
 libs/glad/src/glad.obj: libs/glad/src/glad.c.obj
@@ -191,6 +204,174 @@ libs/glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\glad.dir\build.make CMakeFiles/glad.dir/libs/glad/src/glad.c.s
 .PHONY : libs/glad/src/glad.c.s
 
+libs/imgui/imgui.obj: libs/imgui/imgui.cpp.obj
+.PHONY : libs/imgui/imgui.obj
+
+# target to build an object file
+libs/imgui/imgui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui.cpp.obj
+.PHONY : libs/imgui/imgui.cpp.obj
+
+libs/imgui/imgui.i: libs/imgui/imgui.cpp.i
+.PHONY : libs/imgui/imgui.i
+
+# target to preprocess a source file
+libs/imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui.cpp.i
+.PHONY : libs/imgui/imgui.cpp.i
+
+libs/imgui/imgui.s: libs/imgui/imgui.cpp.s
+.PHONY : libs/imgui/imgui.s
+
+# target to generate assembly for a file
+libs/imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui.cpp.s
+.PHONY : libs/imgui/imgui.cpp.s
+
+libs/imgui/imgui_demo.obj: libs/imgui/imgui_demo.cpp.obj
+.PHONY : libs/imgui/imgui_demo.obj
+
+# target to build an object file
+libs/imgui/imgui_demo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_demo.cpp.obj
+.PHONY : libs/imgui/imgui_demo.cpp.obj
+
+libs/imgui/imgui_demo.i: libs/imgui/imgui_demo.cpp.i
+.PHONY : libs/imgui/imgui_demo.i
+
+# target to preprocess a source file
+libs/imgui/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_demo.cpp.i
+.PHONY : libs/imgui/imgui_demo.cpp.i
+
+libs/imgui/imgui_demo.s: libs/imgui/imgui_demo.cpp.s
+.PHONY : libs/imgui/imgui_demo.s
+
+# target to generate assembly for a file
+libs/imgui/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_demo.cpp.s
+.PHONY : libs/imgui/imgui_demo.cpp.s
+
+libs/imgui/imgui_draw.obj: libs/imgui/imgui_draw.cpp.obj
+.PHONY : libs/imgui/imgui_draw.obj
+
+# target to build an object file
+libs/imgui/imgui_draw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_draw.cpp.obj
+.PHONY : libs/imgui/imgui_draw.cpp.obj
+
+libs/imgui/imgui_draw.i: libs/imgui/imgui_draw.cpp.i
+.PHONY : libs/imgui/imgui_draw.i
+
+# target to preprocess a source file
+libs/imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_draw.cpp.i
+.PHONY : libs/imgui/imgui_draw.cpp.i
+
+libs/imgui/imgui_draw.s: libs/imgui/imgui_draw.cpp.s
+.PHONY : libs/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+libs/imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_draw.cpp.s
+.PHONY : libs/imgui/imgui_draw.cpp.s
+
+libs/imgui/imgui_impl_glfw.obj: libs/imgui/imgui_impl_glfw.cpp.obj
+.PHONY : libs/imgui/imgui_impl_glfw.obj
+
+# target to build an object file
+libs/imgui/imgui_impl_glfw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_impl_glfw.cpp.obj
+.PHONY : libs/imgui/imgui_impl_glfw.cpp.obj
+
+libs/imgui/imgui_impl_glfw.i: libs/imgui/imgui_impl_glfw.cpp.i
+.PHONY : libs/imgui/imgui_impl_glfw.i
+
+# target to preprocess a source file
+libs/imgui/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_impl_glfw.cpp.i
+.PHONY : libs/imgui/imgui_impl_glfw.cpp.i
+
+libs/imgui/imgui_impl_glfw.s: libs/imgui/imgui_impl_glfw.cpp.s
+.PHONY : libs/imgui/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+libs/imgui/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_impl_glfw.cpp.s
+.PHONY : libs/imgui/imgui_impl_glfw.cpp.s
+
+libs/imgui/imgui_impl_opengl3.obj: libs/imgui/imgui_impl_opengl3.cpp.obj
+.PHONY : libs/imgui/imgui_impl_opengl3.obj
+
+# target to build an object file
+libs/imgui/imgui_impl_opengl3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_impl_opengl3.cpp.obj
+.PHONY : libs/imgui/imgui_impl_opengl3.cpp.obj
+
+libs/imgui/imgui_impl_opengl3.i: libs/imgui/imgui_impl_opengl3.cpp.i
+.PHONY : libs/imgui/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+libs/imgui/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_impl_opengl3.cpp.i
+.PHONY : libs/imgui/imgui_impl_opengl3.cpp.i
+
+libs/imgui/imgui_impl_opengl3.s: libs/imgui/imgui_impl_opengl3.cpp.s
+.PHONY : libs/imgui/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+libs/imgui/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_impl_opengl3.cpp.s
+.PHONY : libs/imgui/imgui_impl_opengl3.cpp.s
+
+libs/imgui/imgui_tables.obj: libs/imgui/imgui_tables.cpp.obj
+.PHONY : libs/imgui/imgui_tables.obj
+
+# target to build an object file
+libs/imgui/imgui_tables.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_tables.cpp.obj
+.PHONY : libs/imgui/imgui_tables.cpp.obj
+
+libs/imgui/imgui_tables.i: libs/imgui/imgui_tables.cpp.i
+.PHONY : libs/imgui/imgui_tables.i
+
+# target to preprocess a source file
+libs/imgui/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_tables.cpp.i
+.PHONY : libs/imgui/imgui_tables.cpp.i
+
+libs/imgui/imgui_tables.s: libs/imgui/imgui_tables.cpp.s
+.PHONY : libs/imgui/imgui_tables.s
+
+# target to generate assembly for a file
+libs/imgui/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_tables.cpp.s
+.PHONY : libs/imgui/imgui_tables.cpp.s
+
+libs/imgui/imgui_widgets.obj: libs/imgui/imgui_widgets.cpp.obj
+.PHONY : libs/imgui/imgui_widgets.obj
+
+# target to build an object file
+libs/imgui/imgui_widgets.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_widgets.cpp.obj
+.PHONY : libs/imgui/imgui_widgets.cpp.obj
+
+libs/imgui/imgui_widgets.i: libs/imgui/imgui_widgets.cpp.i
+.PHONY : libs/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+libs/imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_widgets.cpp.i
+.PHONY : libs/imgui/imgui_widgets.cpp.i
+
+libs/imgui/imgui_widgets.s: libs/imgui/imgui_widgets.cpp.s
+.PHONY : libs/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+libs/imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/libs/imgui/imgui_widgets.cpp.s
+.PHONY : libs/imgui/imgui_widgets.cpp.s
+
 src/EBO.obj: src/EBO.cpp.obj
 .PHONY : src/EBO.obj
 
@@ -214,30 +395,6 @@ src/EBO.s: src/EBO.cpp.s
 src/EBO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/EBO.cpp.s
 .PHONY : src/EBO.cpp.s
-
-src/Source.obj: src/Source.cpp.obj
-.PHONY : src/Source.obj
-
-# target to build an object file
-src/Source.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/Source.cpp.obj
-.PHONY : src/Source.cpp.obj
-
-src/Source.i: src/Source.cpp.i
-.PHONY : src/Source.i
-
-# target to preprocess a source file
-src/Source.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/Source.cpp.i
-.PHONY : src/Source.cpp.i
-
-src/Source.s: src/Source.cpp.s
-.PHONY : src/Source.s
-
-# target to generate assembly for a file
-src/Source.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/Source.cpp.s
-.PHONY : src/Source.cpp.s
 
 src/VAO.obj: src/VAO.cpp.obj
 .PHONY : src/VAO.obj
@@ -287,6 +444,54 @@ src/VBO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/VBO.cpp.s
 .PHONY : src/VBO.cpp.s
 
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/renderer.obj: src/renderer.cpp.obj
+.PHONY : src/renderer.obj
+
+# target to build an object file
+src/renderer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/renderer.cpp.obj
+.PHONY : src/renderer.cpp.obj
+
+src/renderer.i: src/renderer.cpp.i
+.PHONY : src/renderer.i
+
+# target to preprocess a source file
+src/renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/renderer.cpp.i
+.PHONY : src/renderer.cpp.i
+
+src/renderer.s: src/renderer.cpp.s
+.PHONY : src/renderer.s
+
+# target to generate assembly for a file
+src/renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/renderer.cpp.s
+.PHONY : src/renderer.cpp.s
+
 src/shader.obj: src/shader.cpp.obj
 .PHONY : src/shader.obj
 
@@ -311,6 +516,30 @@ src/shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
 
+src/texture.obj: src/texture.cpp.obj
+.PHONY : src/texture.obj
+
+# target to build an object file
+src/texture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/texture.cpp.obj
+.PHONY : src/texture.cpp.obj
+
+src/texture.i: src/texture.cpp.i
+.PHONY : src/texture.i
+
+# target to preprocess a source file
+src/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/texture.cpp.i
+.PHONY : src/texture.cpp.i
+
+src/texture.s: src/texture.cpp.s
+.PHONY : src/texture.s
+
+# target to generate assembly for a file
+src/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/src/texture.cpp.s
+.PHONY : src/texture.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -322,25 +551,53 @@ help:
 	@echo ... update_mappings
 	@echo ... glad
 	@echo ... glfw
+	@echo ... imgui
 	@echo ... minecraft
 	@echo ... libs/glad/src/glad.obj
 	@echo ... libs/glad/src/glad.i
 	@echo ... libs/glad/src/glad.s
+	@echo ... libs/imgui/imgui.obj
+	@echo ... libs/imgui/imgui.i
+	@echo ... libs/imgui/imgui.s
+	@echo ... libs/imgui/imgui_demo.obj
+	@echo ... libs/imgui/imgui_demo.i
+	@echo ... libs/imgui/imgui_demo.s
+	@echo ... libs/imgui/imgui_draw.obj
+	@echo ... libs/imgui/imgui_draw.i
+	@echo ... libs/imgui/imgui_draw.s
+	@echo ... libs/imgui/imgui_impl_glfw.obj
+	@echo ... libs/imgui/imgui_impl_glfw.i
+	@echo ... libs/imgui/imgui_impl_glfw.s
+	@echo ... libs/imgui/imgui_impl_opengl3.obj
+	@echo ... libs/imgui/imgui_impl_opengl3.i
+	@echo ... libs/imgui/imgui_impl_opengl3.s
+	@echo ... libs/imgui/imgui_tables.obj
+	@echo ... libs/imgui/imgui_tables.i
+	@echo ... libs/imgui/imgui_tables.s
+	@echo ... libs/imgui/imgui_widgets.obj
+	@echo ... libs/imgui/imgui_widgets.i
+	@echo ... libs/imgui/imgui_widgets.s
 	@echo ... src/EBO.obj
 	@echo ... src/EBO.i
 	@echo ... src/EBO.s
-	@echo ... src/Source.obj
-	@echo ... src/Source.i
-	@echo ... src/Source.s
 	@echo ... src/VAO.obj
 	@echo ... src/VAO.i
 	@echo ... src/VAO.s
 	@echo ... src/VBO.obj
 	@echo ... src/VBO.i
 	@echo ... src/VBO.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/renderer.obj
+	@echo ... src/renderer.i
+	@echo ... src/renderer.s
 	@echo ... src/shader.obj
 	@echo ... src/shader.i
 	@echo ... src/shader.s
+	@echo ... src/texture.obj
+	@echo ... src/texture.i
+	@echo ... src/texture.s
 .PHONY : help
 
 

@@ -45,16 +45,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/CMake/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake"
-  "C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/CMakeLists.txt"
+  "C:/Users/dylan/Desktop/Projects/Cpp/minecraft/CMakeLists.txt"
   "CMakeFiles/3.26.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeRCCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeSystem.cmake"
-  "C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/libs/glfw/CMakeLists.txt"
-  "C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/libs/glfw/src/CMakeLists.txt"
-  "C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/libs/glfw/src/glfw3.pc.in"
-  "C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/libs/glfw/src/glfw3Config.cmake.in"
-  "C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/libs/glfw/src/glfw_config.h.in"
+  "C:/Users/dylan/Desktop/Projects/Cpp/minecraft/libs/glfw/CMakeLists.txt"
+  "C:/Users/dylan/Desktop/Projects/Cpp/minecraft/libs/glfw/src/CMakeLists.txt"
+  "C:/Users/dylan/Desktop/Projects/Cpp/minecraft/libs/glfw/src/glfw3.pc.in"
+  "C:/Users/dylan/Desktop/Projects/Cpp/minecraft/libs/glfw/src/glfw3Config.cmake.in"
+  "C:/Users/dylan/Desktop/Projects/Cpp/minecraft/libs/glfw/src/glfw_config.h.in"
   )
 
 # The corresponding makefile is:
@@ -66,18 +66,19 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "libs/glfw/src/glfw3Config.cmake"
-  "libs/glfw/src/glfw3ConfigVersion.cmake"
-  "libs/glfw/src/glfw_config.h"
-  "libs/glfw/src/glfw3.pc"
-  "libs/glfw/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "libs/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glfw-binaries/src/glfw3Config.cmake"
+  "glfw-binaries/src/glfw3ConfigVersion.cmake"
+  "glfw-binaries/src/glfw_config.h"
+  "glfw-binaries/src/glfw3.pc"
+  "glfw-binaries/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glfw-binaries/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/minecraft.dir/DependInfo.cmake"
   "CMakeFiles/glad.dir/DependInfo.cmake"
-  "libs/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"
-  "libs/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "CMakeFiles/imgui.dir/DependInfo.cmake"
+  "glfw-binaries/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"
+  "glfw-binaries/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )

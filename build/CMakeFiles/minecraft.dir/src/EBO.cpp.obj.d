@@ -1,8 +1,8 @@
 CMakeFiles/minecraft.dir/src/EBO.cpp.obj: \
- C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\EBO.cpp \
- C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\EBO.h \
- C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/libs/glad/include/glad/glad.h \
- C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/libs/glad/include/KHR/khrplatform.h \
+ C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\EBO.cpp \
+ C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\EBO.h \
+ C:/Users/dylan/Desktop/Projects/Cpp/minecraft/libs/glad/include/glad/glad.h \
+ C:/Users/dylan/Desktop/Projects/Cpp/minecraft/libs/glad/include/KHR/khrplatform.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stdint.h \
  c:\mingw\include\stdint.h c:\mingw\include\_mingw.h \
  c:\mingw\include\msvcrtver.h c:\mingw\include\w32api.h \

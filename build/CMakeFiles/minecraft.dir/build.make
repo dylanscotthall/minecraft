@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle
+CMAKE_SOURCE_DIR = C:\Users\dylan\Desktop\Projects\Cpp\minecraft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build
+CMAKE_BINARY_DIR = C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/minecraft.dir/depend.make
@@ -68,104 +68,139 @@ include CMakeFiles/minecraft.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/minecraft.dir/flags.make
 
-CMakeFiles/minecraft.dir/src/Source.cpp.obj: CMakeFiles/minecraft.dir/flags.make
-CMakeFiles/minecraft.dir/src/Source.cpp.obj: CMakeFiles/minecraft.dir/includes_CXX.rsp
-CMakeFiles/minecraft.dir/src/Source.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/src/Source.cpp
-CMakeFiles/minecraft.dir/src/Source.cpp.obj: CMakeFiles/minecraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minecraft.dir/src/Source.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/Source.cpp.obj -MF CMakeFiles\minecraft.dir\src\Source.cpp.obj.d -o CMakeFiles\minecraft.dir\src\Source.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\Source.cpp
+CMakeFiles/minecraft.dir/src/main.cpp.obj: CMakeFiles/minecraft.dir/flags.make
+CMakeFiles/minecraft.dir/src/main.cpp.obj: CMakeFiles/minecraft.dir/includes_CXX.rsp
+CMakeFiles/minecraft.dir/src/main.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/minecraft/src/main.cpp
+CMakeFiles/minecraft.dir/src/main.cpp.obj: CMakeFiles/minecraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minecraft.dir/src/main.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/main.cpp.obj -MF CMakeFiles\minecraft.dir\src\main.cpp.obj.d -o CMakeFiles\minecraft.dir\src\main.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\main.cpp
 
-CMakeFiles/minecraft.dir/src/Source.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minecraft.dir/src/Source.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\Source.cpp > CMakeFiles\minecraft.dir\src\Source.cpp.i
+CMakeFiles/minecraft.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minecraft.dir/src/main.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\main.cpp > CMakeFiles\minecraft.dir\src\main.cpp.i
 
-CMakeFiles/minecraft.dir/src/Source.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minecraft.dir/src/Source.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\Source.cpp -o CMakeFiles\minecraft.dir\src\Source.cpp.s
+CMakeFiles/minecraft.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minecraft.dir/src/main.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\main.cpp -o CMakeFiles\minecraft.dir\src\main.cpp.s
 
 CMakeFiles/minecraft.dir/src/EBO.cpp.obj: CMakeFiles/minecraft.dir/flags.make
 CMakeFiles/minecraft.dir/src/EBO.cpp.obj: CMakeFiles/minecraft.dir/includes_CXX.rsp
-CMakeFiles/minecraft.dir/src/EBO.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/src/EBO.cpp
+CMakeFiles/minecraft.dir/src/EBO.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/minecraft/src/EBO.cpp
 CMakeFiles/minecraft.dir/src/EBO.cpp.obj: CMakeFiles/minecraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/minecraft.dir/src/EBO.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/EBO.cpp.obj -MF CMakeFiles\minecraft.dir\src\EBO.cpp.obj.d -o CMakeFiles\minecraft.dir\src\EBO.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\EBO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/minecraft.dir/src/EBO.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/EBO.cpp.obj -MF CMakeFiles\minecraft.dir\src\EBO.cpp.obj.d -o CMakeFiles\minecraft.dir\src\EBO.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\EBO.cpp
 
 CMakeFiles/minecraft.dir/src/EBO.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minecraft.dir/src/EBO.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\EBO.cpp > CMakeFiles\minecraft.dir\src\EBO.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\EBO.cpp > CMakeFiles\minecraft.dir\src\EBO.cpp.i
 
 CMakeFiles/minecraft.dir/src/EBO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minecraft.dir/src/EBO.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\EBO.cpp -o CMakeFiles\minecraft.dir\src\EBO.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\EBO.cpp -o CMakeFiles\minecraft.dir\src\EBO.cpp.s
 
 CMakeFiles/minecraft.dir/src/shader.cpp.obj: CMakeFiles/minecraft.dir/flags.make
 CMakeFiles/minecraft.dir/src/shader.cpp.obj: CMakeFiles/minecraft.dir/includes_CXX.rsp
-CMakeFiles/minecraft.dir/src/shader.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/src/shader.cpp
+CMakeFiles/minecraft.dir/src/shader.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/minecraft/src/shader.cpp
 CMakeFiles/minecraft.dir/src/shader.cpp.obj: CMakeFiles/minecraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/minecraft.dir/src/shader.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/shader.cpp.obj -MF CMakeFiles\minecraft.dir\src\shader.cpp.obj.d -o CMakeFiles\minecraft.dir\src\shader.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/minecraft.dir/src/shader.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/shader.cpp.obj -MF CMakeFiles\minecraft.dir\src\shader.cpp.obj.d -o CMakeFiles\minecraft.dir\src\shader.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\shader.cpp
 
 CMakeFiles/minecraft.dir/src/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minecraft.dir/src/shader.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\shader.cpp > CMakeFiles\minecraft.dir\src\shader.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\shader.cpp > CMakeFiles\minecraft.dir\src\shader.cpp.i
 
 CMakeFiles/minecraft.dir/src/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minecraft.dir/src/shader.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\shader.cpp -o CMakeFiles\minecraft.dir\src\shader.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\shader.cpp -o CMakeFiles\minecraft.dir\src\shader.cpp.s
 
 CMakeFiles/minecraft.dir/src/VAO.cpp.obj: CMakeFiles/minecraft.dir/flags.make
 CMakeFiles/minecraft.dir/src/VAO.cpp.obj: CMakeFiles/minecraft.dir/includes_CXX.rsp
-CMakeFiles/minecraft.dir/src/VAO.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/src/VAO.cpp
+CMakeFiles/minecraft.dir/src/VAO.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/minecraft/src/VAO.cpp
 CMakeFiles/minecraft.dir/src/VAO.cpp.obj: CMakeFiles/minecraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minecraft.dir/src/VAO.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/VAO.cpp.obj -MF CMakeFiles\minecraft.dir\src\VAO.cpp.obj.d -o CMakeFiles\minecraft.dir\src\VAO.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\VAO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minecraft.dir/src/VAO.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/VAO.cpp.obj -MF CMakeFiles\minecraft.dir\src\VAO.cpp.obj.d -o CMakeFiles\minecraft.dir\src\VAO.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\VAO.cpp
 
 CMakeFiles/minecraft.dir/src/VAO.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minecraft.dir/src/VAO.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\VAO.cpp > CMakeFiles\minecraft.dir\src\VAO.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\VAO.cpp > CMakeFiles\minecraft.dir\src\VAO.cpp.i
 
 CMakeFiles/minecraft.dir/src/VAO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minecraft.dir/src/VAO.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\VAO.cpp -o CMakeFiles\minecraft.dir\src\VAO.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\VAO.cpp -o CMakeFiles\minecraft.dir\src\VAO.cpp.s
 
 CMakeFiles/minecraft.dir/src/VBO.cpp.obj: CMakeFiles/minecraft.dir/flags.make
 CMakeFiles/minecraft.dir/src/VBO.cpp.obj: CMakeFiles/minecraft.dir/includes_CXX.rsp
-CMakeFiles/minecraft.dir/src/VBO.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/OpenGL-MultiColorTriangle/src/VBO.cpp
+CMakeFiles/minecraft.dir/src/VBO.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/minecraft/src/VBO.cpp
 CMakeFiles/minecraft.dir/src/VBO.cpp.obj: CMakeFiles/minecraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/minecraft.dir/src/VBO.cpp.obj"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/VBO.cpp.obj -MF CMakeFiles\minecraft.dir\src\VBO.cpp.obj.d -o CMakeFiles\minecraft.dir\src\VBO.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\VBO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/minecraft.dir/src/VBO.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/VBO.cpp.obj -MF CMakeFiles\minecraft.dir\src\VBO.cpp.obj.d -o CMakeFiles\minecraft.dir\src\VBO.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\VBO.cpp
 
 CMakeFiles/minecraft.dir/src/VBO.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minecraft.dir/src/VBO.cpp.i"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\VBO.cpp > CMakeFiles\minecraft.dir\src\VBO.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\VBO.cpp > CMakeFiles\minecraft.dir\src\VBO.cpp.i
 
 CMakeFiles/minecraft.dir/src/VBO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minecraft.dir/src/VBO.cpp.s"
-	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\src\VBO.cpp -o CMakeFiles\minecraft.dir\src\VBO.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\VBO.cpp -o CMakeFiles\minecraft.dir\src\VBO.cpp.s
+
+CMakeFiles/minecraft.dir/src/renderer.cpp.obj: CMakeFiles/minecraft.dir/flags.make
+CMakeFiles/minecraft.dir/src/renderer.cpp.obj: CMakeFiles/minecraft.dir/includes_CXX.rsp
+CMakeFiles/minecraft.dir/src/renderer.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/minecraft/src/renderer.cpp
+CMakeFiles/minecraft.dir/src/renderer.cpp.obj: CMakeFiles/minecraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/minecraft.dir/src/renderer.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/renderer.cpp.obj -MF CMakeFiles\minecraft.dir\src\renderer.cpp.obj.d -o CMakeFiles\minecraft.dir\src\renderer.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\renderer.cpp
+
+CMakeFiles/minecraft.dir/src/renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minecraft.dir/src/renderer.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\renderer.cpp > CMakeFiles\minecraft.dir\src\renderer.cpp.i
+
+CMakeFiles/minecraft.dir/src/renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minecraft.dir/src/renderer.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\renderer.cpp -o CMakeFiles\minecraft.dir\src\renderer.cpp.s
+
+CMakeFiles/minecraft.dir/src/texture.cpp.obj: CMakeFiles/minecraft.dir/flags.make
+CMakeFiles/minecraft.dir/src/texture.cpp.obj: CMakeFiles/minecraft.dir/includes_CXX.rsp
+CMakeFiles/minecraft.dir/src/texture.cpp.obj: C:/Users/dylan/Desktop/Projects/Cpp/minecraft/src/texture.cpp
+CMakeFiles/minecraft.dir/src/texture.cpp.obj: CMakeFiles/minecraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/minecraft.dir/src/texture.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minecraft.dir/src/texture.cpp.obj -MF CMakeFiles\minecraft.dir\src\texture.cpp.obj.d -o CMakeFiles\minecraft.dir\src\texture.cpp.obj -c C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\texture.cpp
+
+CMakeFiles/minecraft.dir/src/texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minecraft.dir/src/texture.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\texture.cpp > CMakeFiles\minecraft.dir\src\texture.cpp.i
+
+CMakeFiles/minecraft.dir/src/texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minecraft.dir/src/texture.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dylan\Desktop\Projects\Cpp\minecraft\src\texture.cpp -o CMakeFiles\minecraft.dir\src\texture.cpp.s
 
 # Object files for target minecraft
 minecraft_OBJECTS = \
-"CMakeFiles/minecraft.dir/src/Source.cpp.obj" \
+"CMakeFiles/minecraft.dir/src/main.cpp.obj" \
 "CMakeFiles/minecraft.dir/src/EBO.cpp.obj" \
 "CMakeFiles/minecraft.dir/src/shader.cpp.obj" \
 "CMakeFiles/minecraft.dir/src/VAO.cpp.obj" \
-"CMakeFiles/minecraft.dir/src/VBO.cpp.obj"
+"CMakeFiles/minecraft.dir/src/VBO.cpp.obj" \
+"CMakeFiles/minecraft.dir/src/renderer.cpp.obj" \
+"CMakeFiles/minecraft.dir/src/texture.cpp.obj"
 
 # External object files for target minecraft
 minecraft_EXTERNAL_OBJECTS =
 
-minecraft.exe: CMakeFiles/minecraft.dir/src/Source.cpp.obj
+minecraft.exe: CMakeFiles/minecraft.dir/src/main.cpp.obj
 minecraft.exe: CMakeFiles/minecraft.dir/src/EBO.cpp.obj
 minecraft.exe: CMakeFiles/minecraft.dir/src/shader.cpp.obj
 minecraft.exe: CMakeFiles/minecraft.dir/src/VAO.cpp.obj
 minecraft.exe: CMakeFiles/minecraft.dir/src/VBO.cpp.obj
+minecraft.exe: CMakeFiles/minecraft.dir/src/renderer.cpp.obj
+minecraft.exe: CMakeFiles/minecraft.dir/src/texture.cpp.obj
 minecraft.exe: CMakeFiles/minecraft.dir/build.make
-minecraft.exe: libs/glfw/src/libglfw3.a
+minecraft.exe: libimgui.a
 minecraft.exe: libglad.a
+minecraft.exe: glfw-binaries/src/libglfw3.a
 minecraft.exe: CMakeFiles/minecraft.dir/linkLibs.rsp
 minecraft.exe: CMakeFiles/minecraft.dir/objects1.rsp
 minecraft.exe: CMakeFiles/minecraft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable minecraft.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable minecraft.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\minecraft.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -177,6 +212,6 @@ CMakeFiles/minecraft.dir/clean:
 .PHONY : CMakeFiles/minecraft.dir/clean
 
 CMakeFiles/minecraft.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles\minecraft.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\dylan\Desktop\Projects\Cpp\minecraft C:\Users\dylan\Desktop\Projects\Cpp\minecraft C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles\minecraft.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/minecraft.dir/depend
 

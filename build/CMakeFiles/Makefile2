@@ -53,10 +53,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle
+CMAKE_SOURCE_DIR = C:\Users\dylan\Desktop\Projects\Cpp\minecraft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build
+CMAKE_BINARY_DIR = C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -64,66 +64,69 @@ CMAKE_BINARY_DIR = C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle
 # The main recursive "all" target.
 all: CMakeFiles/minecraft.dir/all
 all: CMakeFiles/glad.dir/all
-all: libs/glfw/all
+all: CMakeFiles/imgui.dir/all
+all: glfw-binaries/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: libs/glfw/preinstall
+preinstall: glfw-binaries/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/minecraft.dir/clean
 clean: CMakeFiles/glad.dir/clean
-clean: libs/glfw/clean
+clean: CMakeFiles/imgui.dir/clean
+clean: glfw-binaries/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory libs/glfw
+# Directory level rules for directory glfw-binaries
 
 # Recursive "all" directory target.
-libs/glfw/all: libs/glfw/src/all
-.PHONY : libs/glfw/all
+glfw-binaries/all: glfw-binaries/src/all
+.PHONY : glfw-binaries/all
 
 # Recursive "preinstall" directory target.
-libs/glfw/preinstall: libs/glfw/src/preinstall
-.PHONY : libs/glfw/preinstall
+glfw-binaries/preinstall: glfw-binaries/src/preinstall
+.PHONY : glfw-binaries/preinstall
 
 # Recursive "clean" directory target.
-libs/glfw/clean: libs/glfw/src/clean
-.PHONY : libs/glfw/clean
+glfw-binaries/clean: glfw-binaries/src/clean
+.PHONY : glfw-binaries/clean
 
 #=============================================================================
-# Directory level rules for directory libs/glfw/src
+# Directory level rules for directory glfw-binaries/src
 
 # Recursive "all" directory target.
-libs/glfw/src/all: libs/glfw/src/CMakeFiles/glfw.dir/all
-.PHONY : libs/glfw/src/all
+glfw-binaries/src/all: glfw-binaries/src/CMakeFiles/glfw.dir/all
+.PHONY : glfw-binaries/src/all
 
 # Recursive "preinstall" directory target.
-libs/glfw/src/preinstall:
-.PHONY : libs/glfw/src/preinstall
+glfw-binaries/src/preinstall:
+.PHONY : glfw-binaries/src/preinstall
 
 # Recursive "clean" directory target.
-libs/glfw/src/clean: libs/glfw/src/CMakeFiles/update_mappings.dir/clean
-libs/glfw/src/clean: libs/glfw/src/CMakeFiles/glfw.dir/clean
-.PHONY : libs/glfw/src/clean
+glfw-binaries/src/clean: glfw-binaries/src/CMakeFiles/update_mappings.dir/clean
+glfw-binaries/src/clean: glfw-binaries/src/CMakeFiles/glfw.dir/clean
+.PHONY : glfw-binaries/src/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/minecraft.dir
 
 # All Build rule for target.
 CMakeFiles/minecraft.dir/all: CMakeFiles/glad.dir/all
-CMakeFiles/minecraft.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
+CMakeFiles/minecraft.dir/all: CMakeFiles/imgui.dir/all
+CMakeFiles/minecraft.dir/all: glfw-binaries/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minecraft.dir\build.make CMakeFiles/minecraft.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles --progress-num=19,20,21,22,23,24 "Built target minecraft"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=27,28,29,30,31,32,33,34 "Built target minecraft"
 .PHONY : CMakeFiles/minecraft.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/minecraft.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/minecraft.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 0
 .PHONY : CMakeFiles/minecraft.dir/rule
 
 # Convenience name for target.
@@ -142,14 +145,14 @@ CMakeFiles/minecraft.dir/clean:
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\glad.dir\build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\glad.dir\build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles --progress-num=1,2 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=1,2 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/glad.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/glad.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 0
 .PHONY : CMakeFiles/glad.dir/rule
 
 # Convenience name for target.
@@ -162,56 +165,82 @@ CMakeFiles/glad.dir/clean:
 .PHONY : CMakeFiles/glad.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/src/CMakeFiles/update_mappings.dir
+# Target rules for target CMakeFiles/imgui.dir
 
 # All Build rule for target.
-libs/glfw/src/CMakeFiles/update_mappings.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs\glfw\src\CMakeFiles\update_mappings.dir\build.make libs/glfw/src/CMakeFiles/update_mappings.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs\glfw\src\CMakeFiles\update_mappings.dir\build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles --progress-num=25 "Built target update_mappings"
-.PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/all
+CMakeFiles/imgui.dir/all: glfw-binaries/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=19,20,21,22,23,24,25,26 "Built target imgui"
+.PHONY : CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/src/CMakeFiles/update_mappings.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glfw/src/CMakeFiles/update_mappings.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles 0
-.PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/rule
+CMakeFiles/imgui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 24
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/imgui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 0
+.PHONY : CMakeFiles/imgui.dir/rule
 
 # Convenience name for target.
-update_mappings: libs/glfw/src/CMakeFiles/update_mappings.dir/rule
+imgui: CMakeFiles/imgui.dir/rule
+.PHONY : imgui
+
+# clean rule for target.
+CMakeFiles/imgui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui.dir\build.make CMakeFiles/imgui.dir/clean
+.PHONY : CMakeFiles/imgui.dir/clean
+
+#=============================================================================
+# Target rules for target glfw-binaries/src/CMakeFiles/update_mappings.dir
+
+# All Build rule for target.
+glfw-binaries/src/CMakeFiles/update_mappings.dir/all:
+	$(MAKE) $(MAKESILENT) -f glfw-binaries\src\CMakeFiles\update_mappings.dir\build.make glfw-binaries/src/CMakeFiles/update_mappings.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw-binaries\src\CMakeFiles\update_mappings.dir\build.make glfw-binaries/src/CMakeFiles/update_mappings.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=35 "Built target update_mappings"
+.PHONY : glfw-binaries/src/CMakeFiles/update_mappings.dir/all
+
+# Build rule for subdir invocation for target.
+glfw-binaries/src/CMakeFiles/update_mappings.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw-binaries/src/CMakeFiles/update_mappings.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 0
+.PHONY : glfw-binaries/src/CMakeFiles/update_mappings.dir/rule
+
+# Convenience name for target.
+update_mappings: glfw-binaries/src/CMakeFiles/update_mappings.dir/rule
 .PHONY : update_mappings
 
 # clean rule for target.
-libs/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs\glfw\src\CMakeFiles\update_mappings.dir\build.make libs/glfw/src/CMakeFiles/update_mappings.dir/clean
-.PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/clean
+glfw-binaries/src/CMakeFiles/update_mappings.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw-binaries\src\CMakeFiles\update_mappings.dir\build.make glfw-binaries/src/CMakeFiles/update_mappings.dir/clean
+.PHONY : glfw-binaries/src/CMakeFiles/update_mappings.dir/clean
 
 #=============================================================================
-# Target rules for target libs/glfw/src/CMakeFiles/glfw.dir
+# Target rules for target glfw-binaries/src/CMakeFiles/glfw.dir
 
 # All Build rule for target.
-libs/glfw/src/CMakeFiles/glfw.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs\glfw\src\CMakeFiles\glfw.dir\build.make libs/glfw/src/CMakeFiles/glfw.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs\glfw\src\CMakeFiles\glfw.dir\build.make libs/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target glfw"
-.PHONY : libs/glfw/src/CMakeFiles/glfw.dir/all
+glfw-binaries/src/CMakeFiles/glfw.dir/all:
+	$(MAKE) $(MAKESILENT) -f glfw-binaries\src\CMakeFiles\glfw.dir\build.make glfw-binaries/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f glfw-binaries\src\CMakeFiles\glfw.dir\build.make glfw-binaries/src/CMakeFiles/glfw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target glfw"
+.PHONY : glfw-binaries/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
-libs/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 libs/glfw/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\OpenGL-MultiColorTriangle\build\CMakeFiles 0
-.PHONY : libs/glfw/src/CMakeFiles/glfw.dir/rule
+glfw-binaries/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw-binaries/src/CMakeFiles/glfw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dylan\Desktop\Projects\Cpp\minecraft\build\CMakeFiles 0
+.PHONY : glfw-binaries/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
-glfw: libs/glfw/src/CMakeFiles/glfw.dir/rule
+glfw: glfw-binaries/src/CMakeFiles/glfw.dir/rule
 .PHONY : glfw
 
 # clean rule for target.
-libs/glfw/src/CMakeFiles/glfw.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs\glfw\src\CMakeFiles\glfw.dir\build.make libs/glfw/src/CMakeFiles/glfw.dir/clean
-.PHONY : libs/glfw/src/CMakeFiles/glfw.dir/clean
+glfw-binaries/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f glfw-binaries\src\CMakeFiles\glfw.dir\build.make glfw-binaries/src/CMakeFiles/glfw.dir/clean
+.PHONY : glfw-binaries/src/CMakeFiles/glfw.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

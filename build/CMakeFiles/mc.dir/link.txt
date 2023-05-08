@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libmc.a CMakeFiles/mc.dir/src/main.cpp.obj CMakeFiles/mc.dir/src/EBO.cpp.obj CMakeFiles/mc.dir/src/shader.cpp.obj CMakeFiles/mc.dir/src/VAO.cpp.obj CMakeFiles/mc.dir/src/VBO.cpp.obj CMakeFiles/mc.dir/src/renderer.cpp.obj CMakeFiles/mc.dir/src/texture.cpp.obj
+C:\MinGW\bin\ranlib.exe libmc.a

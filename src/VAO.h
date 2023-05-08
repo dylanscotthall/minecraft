@@ -2,14 +2,15 @@
 
 #include <glad/glad.h>
 #include "VBO.h"
+#include "VBOLayout.h"
 
 class VAO {
+	private:
+	unsigned int m_VAO_ID;
 public:
-	GLuint ID;
 	VAO();
-
-	void LinkAttrib(VBO VBO, GLuint layout, GLuint numComponents, GLenum type, GLsizeiptr stride, void* offset);
-	void Bind();
-	void Unbind();
+	void AddBuffer(const VBO& VBO, const VBOLayout& layout);
+	void Bind() const;
+	void Unbind() const;
 	void Delete();
 };
